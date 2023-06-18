@@ -1,4 +1,61 @@
+# Remember if we are using the git first time so we need to authencate our local to the github 
+# by id and password
+
 Er. Aadil Ji@ASUS-A15 MINGW64 ~ (master)
 the tilde sign shows the root directory
 
-# 
+# to list the directory elements:-
+ls
+
+# to change the directory:-
+cd <directory name>
+
+# to create a new directory:-
+mkdir <directory name>
+
+# to open a vs-code :-
+code .
+
+# to create a empty file:-
+touch demo.py
+
+--> always try to keep the folder name in the local same as the repository name on the github.
+
+# to initialise the git in the directory
+git init
+
+# to know the status of the git
+git status
+
+# to clear the screen
+clear
+
+# to change the branch 
+git branch -M main/master
+
+# to put the files from untracking area to tracking area
+git add .
+
+# now if we check the status, we can see that files are now in the staging area
+git status
+
+# commit(save) the changes, with a comment
+git commit -m "first commit"
+
+# we will get the fatal error, since there is no connection b/w our local to github
+# push every thing to branch of github
+git push origin master
+
+# to setup a connection b/w repo to git 
+git remote add orgin https://.............................
+
+# now again push every thing to branch of github(it will be a success)
+git push origin main/master
+
+# to remove the git file:-
+# remove recurssively .git file (-f stands for force and -r for recursively)
+rm -rf .git
+
+# we can see in the vs code the yellow lines comes(vertical line) that shows that this lines are new added.
+also remember that there 
+
