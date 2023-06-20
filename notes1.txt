@@ -57,5 +57,68 @@ git push origin main/master
 rm -rf .git
 
 # we can see in the vs code the yellow lines comes(vertical line) that shows that this lines are new added.
-also remember that there 
+
+# to pull the changes made by other developer:-
+git pull origin main
+
+################# GIT Merging conflict ######################################
+# now suppose we added some lines in our code. and then we ran the command
+git add . && git commit -m "new changes"
+
+then we pushed our code 
+git push origin main
+
+now our repository and local are at the same line.
+now suppose a developer push some code on the git hub
+now we also write some code and agian when gone to push the code
+it will give error, that now you are not on the same line
+now if we pull the latest code, it will ask, that accept the changes, discard the changes. etc.
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+### Git Clone
+git clone <HTTPS link of the any repository....... it might be of us / it might be some other company or people>.
+
+## we always try to create a multiple branches in a single repo:-
+test
+dev
+prod etc.
+
+## to list all the branches:-
+git branch
+
+## create a new branch and swith to it 
+git checkout -b dev
+
+## to see the logs of the commits
+git log
+
+## to swith to a already created branch
+git checkout dev
+
+## to push to dev branch
+git push origin dev
+
+### Then we saw how to create a pull request, so that any branch having the commit ahead then the production branch. we can raise a pull request and if the developer think if it's right then he can accept the pull request.	
+
+we can see every commits we have done and what were the changes on the git hub, it will be visible on the side of the folder, and it look like this:- 19 commits, 20 commits etc.
+
+## we cannot change the past commmits, since every commits have some id's attached to with the commit change. the id is created using hashing.
+
+## when do we receive the stash error??
+
+please commit your changes or stash them before you switch branches??
+Ans. when we are switching from one brach to another branch without commiting & and pushing.
+so we can now commit our changes and push it.
+or another way is that
+we can use stash, so that it will just save our work in local and we can come back and do the commiting and all this things.
+
+git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+
+now git stash will remove everything we added in the code but we did not do any commit aur put it into the staging area. so it will remove all the recent code.
+now suppose if we want to go back , means suppose we bymistake stash the code, so now how can we get back our code back
+
+use:- git stash pop
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
